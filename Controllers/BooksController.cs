@@ -87,6 +87,9 @@ namespace XML_Lab5.Controllers
         private XmlElement _CreateBookElement(XmlDocument doc, Models.Book newBook)
         {
             XmlElement book = doc.CreateElement("book");
+
+            // TO DO:
+            // Figure out how to get ID and increment it (hint: lastchild + int32.parse)
             XmlNode id = doc.LastChild;
 
 
